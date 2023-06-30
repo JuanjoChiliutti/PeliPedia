@@ -40,11 +40,11 @@ function Searchbar({ setMovies, movies }) {
 
   return (
     <div><h1>PeliPedia</h1>
-    <p>Busca tu pelicula favorita</p>
+    <p className="p-busca">Busca tu pelicula favorita</p>
     <form className="form" onSubmit={handleSubmit}>
         <input type="text" placeholder="Matrix, Spiderman, Shrek..." value={input} onChange={handleChange}/>
-        {errors && <p style={{color: 'red'}}>{errors}</p>}
-        <button >Buscar</button>
+        {errors && <p className="p-error">{errors}</p>}
+        <button className="shadow__btn">Buscar</button>
     </form>
     </div>
   )
