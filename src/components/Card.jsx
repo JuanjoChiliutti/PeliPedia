@@ -1,9 +1,9 @@
 
 import '../styles/Card.css'
 
-function Card({movies}) {
+function Card({ movies }) {
   const hasMovies = movies?.length > 0
-  const mappedMovies = movies?.map(movie =>({
+  const mappedMovies = movies?.map(movie => ({
     id: movie.imdbID,
     title: movie.Title,
     year: movie.Year,

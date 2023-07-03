@@ -13,7 +13,6 @@ function Searchbar({ setMovies, movies }) {
     const value = event.target.value
     if(value.startsWith(' ')) return
     setInput(value)
-    
   }
   useEffect(() => {
 
@@ -42,7 +41,7 @@ function Searchbar({ setMovies, movies }) {
     <div><h1>PeliPedia</h1>
     <p className="p-busca">Busca tu pelicula favorita</p>
     <form className="form" onSubmit={handleSubmit}>
-        <input type="text" placeholder="Matrix, Spiderman, Shrek..." value={input} onChange={handleChange}/>
+        <input type="text" placeholder="The Matrix, Spiderman, Shrek..." value={input} onChange={handleChange}/>
         {errors && <p className="p-error">{errors}</p>}
         <button className="shadow__btn">Buscar</button>
     </form>
